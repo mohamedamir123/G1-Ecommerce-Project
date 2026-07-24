@@ -1,0 +1,118 @@
+/* this is for the home page */
+.special-word{
+    padding: 2px 10px;
+    background-color: #FFFFFF;
+    border-radius: 800px;
+}
+
+.special-word span{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20.4px;
+    color: #000000; 
+}
+
+.search-wrapper{
+    /* width: 40%; */
+    display: flex;
+    align-items: center;
+    border: 1px solid #EBEEF6;
+    border-radius: 30px;
+    padding-right: 3px;
+    /* overflow: hidden; */
+}
+.dropdown-btn{
+    border: none;
+    outline: none;
+    background-color: var(--secondary-color);
+    border-radius: 30px 0 0 30px;
+    padding: 13px 12px;
+}
+
+.search-wrapper input{
+    border: none;
+    outline: none;
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: var(--border-color);
+}
+
+.search-wrapper input::placeholder{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: var(--border-color);
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fav-btn{
+    border: none;
+    outline: none;
+    background-color: transparent;  
+}
+
+.categories-carousel{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.categories-track{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+    animation: categoriesScroll 25s linear infinite;
+}
+
+.categories-track:hover{
+    animation-play-state: paused;
+}
+
+.categories-track > div{
+    flex: 0 0 auto;
+}
+
+.categories-carousel::before,
+.categories-carousel::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.categories-carousel::before{
+    left: 0;
+    background: linear-gradient(to right,#fff,transparent);
+}
+
+.categories-carousel::after{
+    right: 0;
+    background: linear-gradient(to left,#fff,transparent);
+}
+
+@keyframes categoriesScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 10px));
+    }
+}

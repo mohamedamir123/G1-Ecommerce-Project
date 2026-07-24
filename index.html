@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- New Offers Bar -->
+    <div class="container-fluid" style="background-color: var(--main-color); padding: 19px 0;">
+        <div class="d-flex align-items-center justify-content-center offers-bar" style="gap: 20px;">
+            <div class="special-word">
+                <span>Special</span>
+            </div>
+            <p class="mb-0 text-white"> Get 10% <strong>Discount</strong>  for first order </p>
+            <a href="pages/register.html" class="text-white">
+                <i>Rigster Now</i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="container py-4">
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-center pb-4 mb-4" style="border-bottom: 1px solid var(--border-color); gap: 20px;">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo">  
+                    </a>
+                </div>
+                <form class="">
+                    <div class="search-wrapper">
+                        <div class="dropdown">
+                            <button class="dropdown-btn dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                All Categories
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" placeholder="Search anything...">
+                        <button type="submit" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass text-white"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="d-flex align-items-center gap-2">
+                    <div class="rounded-circle" style="background-color: var(--border-color); padding: 9px 10px;">
+                        <i class="fa-solid fa-phone text-white"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p class="text-black mb-0" style="font-size: 13px; font-weight: 400; line-height: 19.5px;">Hotline 24/7</p>
+                        <span style="color: var(--main-color); font-size: 20px; font-weight: 700; line-height: 24px;">(025) 3686 25 16</span>
+                    </div>
+                </div>
+                <button type="button" class="fav-btn position-relative">
+                    <a href="#" class="text-black" style="font-size: 24px;">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle" style="background-color: var(--main-color);">
+                        2
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+            </div>
+            <div class="d-flex align-items-center flex-wrap justify-content-between">
+                <div class="d-flex flex-wrap align-items-center" style="gap: 10px;">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Demos
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pages/about.html">About</a></li>
+                            <li><a class="dropdown-item" href="pages/products.html">Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#best-seller">Best Seller</a></li>
+                            <li><a class="dropdown-item" href="#suggest">Suggest Today</a></li>
+                            <li><a class="dropdown-item" href="#just-landing">Just Landing</a></li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="text-black text-decoration-none">Contact</a>
+                </div>
+                <div class="d-flex flex-wrap align-items-center" style="gap: 10px;">
+                    <div class="d-flex align-items-center" style="gap: 8px;">
+                        <i class="fa-solid fa-store"></i>
+                        <p class="mb-0 text-black">Sell on Swoo</p>
+                    </div>
+                    <div class="d-flex align-items-center" style="gap: 8px;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <p class="mb-0 text-black">Order Tracking</p>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recently Viewed
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#best-seller">Best Seller</a></li>
+                            <li><a class="dropdown-item" href="#suggest">Suggest Today</a></li>
+                            <li><a class="dropdown-item" href="#just-landing">Just Landing</a></li>
+                        </ul>
+                    </div>
+                    <div style="border-right: 2px solid var(--border-color);">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EGP</a></li>
+                                <li><a class="dropdown-item" href="#">ُEUR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <img src="images/region.png" width="15" height="15" alt="region">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                ENG
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">AR</a></li>   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Main Content -->
+    <main class="mt-4">
+        <!-- Popular Categories -->
+        <section id="popular-categories" class="container" style="margin-bottom: 50px;">
+            <div class="d-flex flex-column" style="gap: 40px;">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h4 class="mb-0" style="font-size: 24px; font-weight: 700; line-height: 28.8px;">Popular Categories</h4>
+                    <a href="products.html" style="font-weight: 400; font-size: 14px; line-height: 21px;" class="text-black text-decoration-none">View All</a>
+                </div>
+                <div class="categories-carousel">
+                    <div class="categories-track">  
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/gaming.png" alt="gaming">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Gaming</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/sport.png" alt="sport">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Sport Equip</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color);  width: 110px; height: 110px;">
+                                <img src="images/kitchen.png" alt="kitchen">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Kitchen</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/cleaner.png" alt="cleaner">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Robot Cleaner</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/mobile.png" alt="mobile">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Mobiles</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/printer.png" alt="printer">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Office</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/cameras.png" alt="cameras">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Cameras</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/laptop.png" alt="laptop">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Computers</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/televisions.png" alt="televisions">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Televisions</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/audio.png" alt="audio">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Audios</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/gaming.png" alt="gaming">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Gaming</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/sport.png" alt="sport">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Sport Equip</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color);  width: 110px; height: 110px;">
+                                <img src="images/kitchen.png" alt="kitchen">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Kitchen</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/cleaner.png" alt="cleaner">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Robot Cleaner</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/mobile.png" alt="mobile">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Mobiles</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/printer.png" alt="printer">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Office</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/cameras.png" alt="cameras">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Cameras</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/laptop.png" alt="laptop">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Computers</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/televisions.png" alt="televisions">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Televisions</span>
+                        </div>
+                        <div class="d-flex flex-column" style="gap: 15px;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="padding: 25px; background-color: var(--border-color); width: 110px; height: 110px;">
+                                <img src="images/audio.png" alt="audio">
+                            </div>
+                            <span style="font-size: 13px; font-weight: 700; line-height: 22.1px;" class="text-center">Audios</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Popular Categories -->
+
+        <!-- Todo: Explore Section -->
+        <section id="explore" class="container"></section>
+        <!-- Todo: Explore Section -->
+
+    </main>
+    <!-- Main Content -->
+    
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
