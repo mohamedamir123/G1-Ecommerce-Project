@@ -368,7 +368,7 @@
 
 .custom-brand-control{
     position: absolute !important;
-    top: 65% !important;              /* انزلها عند صف اللوجوهات */
+    top: 65% !important;              
     transform: translateY(-50%);
     width: 50px !important;
     height: 80px;
@@ -378,7 +378,6 @@
     align-items: center;
     justify-content: center;
     z-index: 2 !important;
-    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .carousel-control-prev.custom-brand-control{
@@ -425,4 +424,58 @@
 
 .suggest-card{
     height: 430px;
+}
+
+.speaker-control{
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speaker-products{
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.speaker-item{
+    flex: 1;
+    min-width: 0;
+    display: flex;
+}
+
+.speaker-item .product-card{
+    width: 100%;
+    height: 100%;
+}
+
+.speaker-item img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.combined-box{
+    background: var(--secondary-background-color);
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+    position: relative;
+}
+
+
+#landingCarousel .custom-brand-control{
+    top: 50%!important;  
+}
+
+#landingCarousel .carousel-control-prev.custom-brand-control{
+    left: -5.2%;
+}
+#landingCarousel .carousel-control-next.custom-brand-control{
+    right: -5.3%;
 }
