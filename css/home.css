@@ -13,13 +13,11 @@
 }
 
 .search-wrapper{
-    /* width: 40%; */
     display: flex;
     align-items: center;
     border: 1px solid #EBEEF6;
     border-radius: 30px;
     padding-right: 3px;
-    /* overflow: hidden; */
 }
 .dropdown-btn{
     border: none;
