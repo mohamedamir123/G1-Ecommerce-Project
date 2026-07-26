@@ -513,11 +513,3 @@
     top: 0;
     left: 40%;
 }
-
-.vertical-hr{
-    width: 2px;
-    height: auto;
-    background-color: #99999999;
-    border: none;
-    display: inline-block;
-}
