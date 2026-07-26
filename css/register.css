@@ -1,1 +1,106 @@
 /* this is for  the register page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background-color: #eae8e8;
+}
+
+.right img{
+    width: 18px;
+    height: 12px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: rgb(1, 198, 1);
+}
+
+.circle {
+    width: 36px;
+    height: 36px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.circle.green {
+    background: rgb(3, 202, 3);
+    color: white;
+}
+
+.search-nav{
+    background-color: rgb(3, 204, 3);
+    min-height: 40px;
+    height: auto;
+}
+
+.search-box {
+  background: white;
+  max-width: 480px;
+  width: 100%;
+  height: 50px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+}
+.search-box p{
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; 
+    }
+    .search-nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .text-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .actions .text-block {
+        display: none;
+    }
+}
+.register-form{
+    min-width: 280px;
+}
+.form-1 h3{
+    color: rgb(7, 192, 7);
+}
+.form-1 p{
+    color: #888;
+}
+.form-1 label{
+    display: block;
+}
+
+.form-1 a{
+    color: rgb(9, 206, 9);
+}
+@media (max-width: 768px) {
+    .main-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .svg-fill {
+        margin: 0 auto;
+        max-width: 250px; 
+    }
+    .rigster-form {
+        width: 100%;
+    }
+}
