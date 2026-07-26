@@ -8,80 +8,146 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Register</title>
 </head>
 
 <body>
-    <div class="wh-box rounded-4 bg-white p-2 m-1">
-        <div class="navbar py-2 px-4 d-flex align-items-center justify-content-between">
-            <div class="hotline d-flex align-items-center gap-2">
-                <p class="badge bg-light text-dark rounded-1 py-1 px-2">Hotline 24/7</p>
-                <p class="phone fw-bold">(025) 3886 25 16</p>
-            </div>
-
-            <div class="right d-flex align-items-center gap-4">
-                <a href="#" class="text-decoration-none text-dark">Sell on Swoo</a>
-                <a href="#" class="text-decoration-none text-dark">Order Tracking</a>
-                <span>USD ▾</span>
-                <img src="/images/GRLTZJLUHT.jpg" alt="" class="rounded-1">
-                <span>Eng ▾</span>
-            </div>
-        </div>
-        <div class="header p-2 d-flex align-items-center justify-content-between">
-            <div class="logo d-flex align-items-center gap-2">
-                <div class="logo-icon rounded-2"></div>
-                <div class="logo-text">
-                    <div class="logo-title fw-bold">SWOO</div>
-                    <div class="logo-sub">TECH MART</div>
+    <header class="container-fluid rounded-3 py-4 bg-white">
+        <div class="container d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-center pb-4 mb-4" style="border-bottom: 1px solid var(--border-color); gap: 20px;">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="/images/logo.png" alt="logo">  
+                    </a>
                 </div>
-            </div>
+                <form>
+                    <div class="search-wrapper">
+                        <div class="dropdown">
+                            <button class="dropdown-btn dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                All Categories
+                            </button>
 
-            <div class="menu d-flex gap-4 fw-bold">
-                <a class="text-decoration-none text-dark">HOMES <i class="fa-solid fa-angle-down"></i></a>
-                <a class="text-decoration-none text-dark">PAGES <i class="fa-solid fa-angle-down"></i></a>
-                <a class="text-decoration-none text-dark">PRODUCTS <i class="fa-solid fa-angle-down"></i></a>
-                <a class="text-decoration-none text-dark">CONTACT</a>
-            </div>
-
-            <div class="actions d-flex align-items-center gap-3">
-                <div class="circle rounded-circle"></div>
-                <div class="heart circle align-items-center rounded-circle">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="circle rounded-circle"></div>
-                <div class="lh-2">
-                    <div class="text-secondary">WELCOME</div>
-                    <div class="value fw-bold">
-                        <a href="#" class="text-decoration-none text-dark">LOG IN</a> / <a href="#"
-                            class="text-decoratin-none text-dark">REGISTER</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="bg-transparent" placeholder="Search anything...">
+                        <button type="submit" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass text-white"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="d-flex align-items-center gap-2">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: var(--border-color); width: 45px; height: 45px;">
+                        <i class="fa-solid fa-phone text-white"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p class="text-black mb-0" style="font-size: 13px; font-weight: 400; line-height: 19.5px;">Hotline 24/7</p>
+                        <span style="color: var(--main-color); font-size: 20px; font-weight: 700; line-height: 24px;">(025) 3686 25 16</span>
                     </div>
                 </div>
-                <div class="circle rounded-circle green fs-6 d-flex align-items-center justify-content-between">5</div>
-                <div class="text-block fs-6">
-                    <div class="text-secondary">CART</div>
-                    <div class="value">$1,689.00</div>
+                <button type="button" class="fav-btn position-relative">
+                    <a href="#" class="text-black" style="font-size: 24px;">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle" style="background-color: var(--main-color);">
+                        2
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+            </div>
+            <div class="d-flex align-items-center flex-wrap justify-content-between">
+                <div class="d-flex flex-wrap align-items-center" style="gap: 10px;">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Demos
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pages/about.html">About</a></li>
+                            <li><a class="dropdown-item" href="pages/products.html">Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#best-seller">Best Seller</a></li>
+                            <li><a class="dropdown-item" href="#suggest">Suggest Today</a></li>
+                            <li><a class="dropdown-item" href="#just-landing">Just Landing</a></li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="text-black text-decoration-none">Contact</a>
+                </div>
+                <div class="d-flex flex-wrap align-items-center" style="gap: 10px;">
+                    <div class="d-flex align-items-center" style="gap: 8px;">
+                        <i class="fa-solid fa-store"></i>
+                        <p class="mb-0 text-black">Sell on Swoo</p>
+                    </div>
+                    <div class="d-flex align-items-center" style="gap: 8px;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <p class="mb-0 text-black">Order Tracking</p>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recently Viewed
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#best-seller">Best Seller</a></li>
+                            <li><a class="dropdown-item" href="#suggest">Suggest Today</a></li>
+                            <li><a class="dropdown-item" href="#just-landing">Just Landing</a></li>
+                        </ul>
+                    </div>
+                    <div style="border-right: 2px solid var(--border-color);">
+                        <div class="dropdown">
+                            <button class="btn py-0 dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EGP</a></li>
+                                <li><a class="dropdown-item" href="#">ُEUR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <img src="/images/region.png" width="15" height="15" alt="region">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                ENG
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">AR</a></li>   
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="search-nav py-2 px-4 rounded-2 d-flex align-items-center justify-content-between flex-wrap">
-        <div class="search-box p-2 rounded-4 d-flex align-items-center gap-2">
-            <p class="p-2 mt-2">All Categories <i class="fa-solid fa-angle-down"></i> </p>
-            <input type="text" placeholder="Search anything..." class="search-input fs-6 flex-grow-1">
-            <a class="text-decoration-none text-dark"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </header>
+    <section class="container-fluid bg-white">
+        <div class="mx-auto container d-flex m-2 rounded-2 bg-white" style="padding: 30px;">
+            <p class="m-2">Home /</p>
+            <p class="m-2">Pages /</p>
+            <p class="m-2">Register</p>
         </div>
-        <div class="text-box d-flex">
-            <p class="p-2 my-0 mx-2">FREE SHIPPING OVER $199</p>
-            <p class="p-2 my-0 mx-2">30 DAYS MONEY BACK</p>
-            <p class="p-2 my-0 mx-2">100% SECURE PAYMENT</p>
-        </div>
-
-    </div>
-    <div class="h-p-r d-flex m-2 rounded-2 bg-white">
-        <p class="m-2">Home /</p>
-        <p class="m-2">Pages /</p>
-        <p class="m-2">Register</p>
-    </div>
+    </section>
     <div class="main-box rounded-2 m-3 d-flex gap-4 flex-wrap bg-white">
         <div class="svg-fill m-5">
             <img src="/images/login.svg fill.png" alt="" class="img-fluid">
@@ -112,106 +178,272 @@
             </form>
         </div>
     </div>
-    <div class="footer bg-white">
-        <div class="top-footer d-flex gap-5 flex-wrap justify-content-between">
-            <div class="footer-col m-2">
-                <p class="fw-bold fs-5 mb-5">SWOO-1ST NYC TECH ONLINE MARKET</p>
-                <div>
-                    <p class="p-1 my-0">HOTLINE 24/7</p>
-                    <p class="fw-bold fs-5 p-1 mb-5" style="color: rgb(5, 197, 5);">(025) 3686 25 16</p>
+    <footer class="container-fluid bg-white px-0">
+        <section class="container" style="margin-bottom: 60px;">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-4" style="padding: 50px 0; margin-bottom: 60px; border-bottom: 1px solid #DEE2E6;">
+                <div class="d-flex align-items-center gap-3" style="border-right: 1px solid #DEE2E6; padding-right: 120px;">
+                    <i class="fa-solid fa-truck-fast" style="color: var(--main-color);"></i>
+                    <p class="mb-0 text-uppercase" style="font-size: 14px; font-weight: 400; line-height: 23.8px;">Free Shipping over $99</p>
                 </div>
-                <div>
-                    <p class="mb-0 p-1">257 Thatcher Road St, Brooklyn, Manhattan,NY 10092</p>
-                    <p class="p-1 mb-5">contact@Swootechmart.com</p>
+                <div class="d-flex align-items-center gap-3" style="border-right: 1px solid #DEE2E6; padding-right: 120px;">
+                    <i class="fa-solid fa-arrow-rotate-right" style="color: var(--main-color);"></i>
+                    <p class="mb-0 text-uppercase" style="font-size: 14px; font-weight: 400; line-height: 23.8px;">30 Days money back</p>
                 </div>
-                <div class="icons d-flex gap-3">
-                    <div class="rounded-circle circle">
-                        <a href="#" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                    <div class="rounded-circle circle">
-                        <a href="#" class="text-dark"><i class="fa-brands fa-facebook-f"></i></a>
-                    </div>
-                    <div class="rounded-circle circle">
-                        <a href="#" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <div class="rounded-circle circle">
-                        <a href="#" class="text-dark"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                    <div class="rounded-circle circle">
-                        <a href="#" class="text-dark"><i class="fa-brands fa-discord"></i></a>
-                    </div>
+                <div class="d-flex align-items-center gap-3" style="border-right: 1px solid #DEE2E6; padding-right: 120px;">
+                    <i class="fa-solid fa-shield" style="color: var(--main-color);"></i>
+                    <p class="mb-0 text-uppercase" style="font-size: 14px; font-weight: 400; line-height: 23.8px;">100% Secure Payment</p>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-comments" style="color: var(--main-color);"></i>
+                    <p class="mb-0 text-uppercase" style="font-size: 14px; font-weight: 400; line-height: 23.8px;">24/7 Dedicated Support</p>
                 </div>
             </div>
-            <div class="footer-col m-2">
-                <p class="fw-bold fs-5 mb-5">TOP CATEGORIES</p>
-                <p style="color: #837e7e;">Laptops</p>
-                <p style="color: #837e7e;">PC & Computers</p>
-                <p style="color: #837e7e;">Cell Phones</p>
-                <p style="color: #837e7e;">Tablets</p>
-                <p style="color: #837e7e;">Gaming & VR</p>
-                <p style="color: #837e7e;">networks</p>
-                <p style="color: #837e7e;">Cameras</p>
-                <p style="color: #837e7e;">Sounds</p>
-                <p style="color: #837e7e;">Office</p>
-            </div>
-            <div class="footer-col m-2">
-                <p class="fw-bold fs-5 mb-5">COMPANY</p>
-                <p style="color: #837e7e;">About Swoo</p>
-                <p style="color: #837e7e;">Contact</p>
-                <p style="color: #837e7e;">Career</p>
-                <p style="color: #837e7e;">Blog</p>
-                <p style="color: #837e7e;">Sitemap</p>
-                <p style="color: #837e7e;">Store Locations</p>
-            </div>
-            <div class="footer-col m-2">
-                <p class="fw-bold fs-5 mb-5">HELP CENTER</p>
-                <p style="color: #837e7e;">Customer Service</p>
-                <p style="color: #837e7e;">Policy</p>
-                <p style="color: #837e7e;">Terms & Conditions</p>
-                <p style="color: #837e7e;">Trach Order</p>
-                <p style="color: #837e7e;">FAQs</p>
-                <p style="color: #837e7e;">My Account</p>
-                <p style="color: #837e7e;">Product Support</p>
-            </div>
-            <div class="footer-col m-2">
-                <p class="fw-bold fs-5 mb-5">PARTNER</p>
-                <p style="color: #837e7e;">Become Seller</p>
-                <p style="color: #837e7e;">Affiliate</p>
-                <p style="color: #837e7e;">Advertise</p>
-                <p style="color: #837e7e;">Partnership</p>
-            </div>
-        </div>
-        <div class="d-flex my-5 justify-content-between">
-            <div class="m-5">
-                <select>
-                    <option value="">USD</option>
-                </select>
-                <select>
-                    <option value="">Eng</option>
-                </select>
-            </div>
-            <div class="m-5">
-                <h3>subscribe & get <span style="color: red;">10% off</span> for your first order</h3>
-                <div class="d-flex">
-                    <input type="email" placeholder="Enter Your Email Adress" class="p-2 rounded-4 form-control">
-                    <button class="btn" style="color: rgb(0, 188, 0);">subscribe</button>
+            <div class="d-flex align-items-start justify-content-between flex-wrap">
+                <div class="d-flex flex-column" style="gap: 20px;">
+                    <div class="d-flex flex-column" style="gap: 34px;">
+                        <h2 class="mb-0 text-black" style="font-size: 16px; font-weight: 700; line-height: 19.2px;">Swoo - Online Electronic Market</h2>
+                        <div class="d-flex flex-column">
+                            <p class="mb-0 text-black text-uppercase" style="font-weight: 400; font-size: 12px; line-height: 18px;">hotline 24/7</p>
+                            <span class="mb-0" style="color: var(--main-color); font-size: 20px; font-weight: 700; line-height: 24px;">(025) 3686 25 16</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column" style="gap: 40px;">
+                        <div class="d-flex flex-column">
+                            <p class="mb-0 text-black" style="font-size: 14px; font-weight: 400; line-height: 21px; width: 87%;">
+                                257 Thatcher Road St, Brooklyn, Manhattan, NY 10092
+                            </p>
+                            <a href="#" class="mb-0 text-black text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 21px;">
+                                contact@swateletro.com
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center" style="gap: 14px;">
+                            <a href="#" class="text-black rounded-circle" style="border: 1px solid #99999933; padding: 9px 10px;">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-black rounded-circle" style="border: 1px solid #99999933; padding: 9px 10px;">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-black rounded-circle" style="border: 1px solid #99999933; padding: 9px 10px;">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-black rounded-circle" style="border: 1px solid #99999933; padding: 9px 10px;">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#" class="text-black rounded-circle" style="border: 1px solid #99999933; padding: 9px 10px;">
+                                <i class="fa-brands fa-behance"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <p style="color: #837e7e;">By subscribing, you’re accepted the our <a href="#" class="text-dark">Policy</a></p>
+
+                <div class="d-flex align-items-start justify-content-between flex-wrap" style="gap: 30px 100px;">
+                    <div class="d-flex flex-column" style="gap: 30px;">
+                        <h3 class="mb-0 text-black" style="font-size: 18px; font-weight: 500; line-height: 21.6px;">
+                            Top Categories
+                        </h3>
+                        <ul class="d-flex flex-column gap-2 p-0">
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    TV/Televisions
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Computers
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Laptops
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Mobiles & Tablets
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Audios
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Cameras
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Gadget
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Sport Equipments
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Office
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Smart Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column" style="gap: 30px;">
+                        <h3 class="mb-0 text-black" style="font-size: 18px; font-weight: 500; line-height: 21.6px;">
+                            Company
+                        </h3>
+                        <ul class="d-flex flex-column gap-2 p-0">
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    About Swoo
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Career
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Sitemap
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Store Locations
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column" style="gap: 30px;">
+                        <h3 class="mb-0 text-black" style="font-size: 18px; font-weight: 500; line-height: 21.6px;">
+                            Help Center
+                        </h3>
+                        <ul class="d-flex flex-column gap-2 p-0">
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Customer Service
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Policy
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Trach Order
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    FAQs
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    My Account
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Product Support
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column" style="gap: 30px;">
+                        <h3 class="mb-0 text-black" style="font-size: 18px; font-weight: 500; line-height: 21.6px;">
+                            Partner
+                        </h3>
+                        <ul class="d-flex flex-column gap-2 p-0">
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Become Seller
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Affiliate
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Advertise
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Partnership
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="d-flex m-3 justify-content-between">
-            <p>© 2024 Shawonetc3 . All Rights Reserved</p>
-            <div>
-                <img src="/images/pay1.png.png" alt="">
-                <img src="/images/pay2.png.png" alt="">
-                <img src="/images/pay3.png.png" alt="">
-                <img src="/images/pay4.png.png" alt="">
-                <img src="/images/pay5.png.png" alt="">
+        </section>
+        <section class="container-fluid" style="background-color: var(--secondary-background-color); padding: 40px 0;">
+            <div class="container">
+                <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                    <h4 class="mb-0 text-black" style="font-size: 14px; font-weight: 400px; line-height: 23.8px;">
+                        © 2024 <span style="font-weight: 700;">Shawonetc3</span> . All Rights Reserved
+                    </h4>
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="/images/paypal.png" class="img-fluid" alt="">
+                        <img src="/images/stripe.png" class="img-fluid" alt="">
+                        <img src="/images/mastercard.png" class="img-fluid" alt="">
+                        <img src="/images/klarna.png" class="img-fluid" alt="">
+                        <img src="/images/visa.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between gap-2">
+                        <div style="border-right: 2px solid var(--border-color);">
+                            <div class="dropdown">
+                                <button class="btn py-0 dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    USD
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">EGP</a></li>
+                                    <li><a class="dropdown-item" href="#">ُEUR</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="/images/region.png" width="15" height="15" alt="region">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    ENG
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">AR</a></li>   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="" class="text-decoration-none">Mobile Site</a>
-        </div>
-    </div>
+        </section>
+    </footer>
 
 
 
