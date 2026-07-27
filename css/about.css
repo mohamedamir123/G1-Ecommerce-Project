@@ -1,121 +1,16 @@
 /* this is for the  about page */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-size: 15px;
-    background-color: #eae8e8;
-}
-
-.right img{
-    width: 18px;
-    height: 12px;
-}
-
-.logo-icon {
-    width: 40px;
-    height: 40px;
-    background: rgb(1, 198, 1);
-}
-
-.circle {
-    width: 36px;
-    height: 36px;
-    background: #f0f0f0;
-    text-align: center;
-}
-
-.circle.green {
-    background: rgb(3, 202, 3);
-    color: white;
-}
-
-.search-nav{
-    background-color: rgb(3, 204, 3);
-    min-height: 40px;
-    height: auto;
-}
-
-.search-box {
-  background: white;
-  max-width: 480px;
-  width: 100%;
-  height: 50px;
-}
-
-.search-input {
-  border: none;
-  outline: none;
-}
-
-.search-box p{
-    white-space: nowrap;
-}
-.top-main{
-    border: solid 1px #cbc4c465;
-}
-.info-card{
-    background-color: #c1bfbf;
-}
-.info-card h6{
-    max-width: 500px;
-    text-align: center;
-}
-.info-card p{
-    max-width: 500px;
-    text-align: center;
-}
-.photo img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.circle-2{
-    background-color: green;
-    width: 36px;
-    height: 36px;
-    text-align: center  ;
-}
-.equal-card{
-    flex-basis: 0;
-}
-span{
-    color: #9f9d9d;
-}
-.timeline-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-    row-gap: 0.75rem;
-}
-.leader-img {
-    object-position: top;
-}
-
-.members{
-    background-image: url(/about/images/2951a7ca0e1c75aec67103aa90d1e7105be78160.png);
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none; 
-    }
-    .search-nav {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-    .text-box {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .actions .text-block {
-        display: none;
-    }
+.about-btn{
+    background-color: var(--main-color);
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
 }
