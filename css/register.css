@@ -1,8 +1,11 @@
 /* this is for  the register page */
 
 body {
-    background-color: #eae8e8;
+    background-color: var(--secondary-background-color);
 }
+
+
+
 
 .register-form{
     min-width: 280px;

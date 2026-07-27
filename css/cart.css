@@ -1,1 +1,4 @@
 /* this is for the cart page */
+body {
+    background-color: var(--secondary-background-color);
+}

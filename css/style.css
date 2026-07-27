@@ -19,6 +19,10 @@ html{
     --sub-heading-color: #F1352B;
 }
 
+.active-page{
+    color: #000000 !important;
+}
+
 .search-wrapper{
     display: flex;
     align-items: center;
