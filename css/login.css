@@ -1,1 +1,38 @@
 /* this is for the login page */
+body {
+    background-color: var(--secondary-background-color);
+}
+
+
+.main-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+
+.form-1 h3{
+    color: var(--main-color);
+}
+.form-1 p{
+    color: #888;
+}
+.form-1 label{
+    display: block;
+}
+
+.form-1 a{
+    color: var(--main-color);
+}
+
+
+.register-btn{
+    background-color: var(--main-color);
+    width: fit-content;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px 48px;
+}
