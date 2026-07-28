@@ -53,7 +53,7 @@
 }
 
 .send-btn{
-    background-color: #1ABA1A;
+    background-color: var(--main-color);
     border-radius: 10px;
     border: none;
     outline: none;
