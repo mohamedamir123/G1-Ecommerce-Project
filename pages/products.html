@@ -3,11 +3,1753 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>All Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/products.css">
 </head>
 <body>
+        <!-- Header -->
+    <header class="container-fluid bg-white py-4">
+        <div class="container d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-center pb-4 mb-4" style="border-bottom: 1px solid var(--border-color); gap: 20px;">
+                <div class="logo">
+                    <a href="/index.html">
+                        <img src="/images/logo.png" alt="logo">  
+                    </a>
+                </div>
+                <form class="">
+                    <div class="search-wrapper">
+                        <div class="dropdown">
+                            <button class="dropdown-btn dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                All Categories
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" placeholder="Search anything...">
+                        <button type="submit" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass text-white"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="d-flex align-items-center gap-2">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: var(--border-color); width: 45px; height: 45px;">
+                        <i class="fa-solid fa-phone text-white" ></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p class="text-black mb-0" style="font-size: 13px; font-weight: 400; line-height: 19.5px;">Hotline 24/7</p>
+                        <span style="color: var(--main-color); font-size: 20px; font-weight: 700; line-height: 24px;">(025) 3686 25 16</span>
+                    </div>
+                </div>
+                <button type="button" class="fav-btn position-relative">
+                    <a href="#" class="text-black" style="font-size: 24px;">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle" style="background-color: var(--main-color);">
+                        2
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+            </div>
+            <div class="d-flex align-items-center flex-wrap justify-content-between">
+                <div class="d-flex flex-wrap align-items-center" style="gap: 10px;">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Demos
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pages/about.html">About</a></li>
+                            <li><a class="dropdown-item" href="/pages/products.html">Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/index.html#best-seller">Best Seller</a></li>
+                            <li><a class="dropdown-item" href="/index.html#suggest">Suggest Today</a></li>
+                            <li><a class="dropdown-item" href="/index.html#just-landing">Just Landing</a></li>
+                        </ul>
+                    </div>
+                    <a href="/pages/contact.html" class="text-black text-decoration-none">Contact</a>
+                </div>
+                <div class="d-flex flex-wrap align-items-center" style="gap: 10px;">
+                    <div class="d-flex align-items-center" style="gap: 8px;">
+                        <i class="fa-solid fa-store"></i>
+                        <p class="mb-0 text-black">Sell on Swoo</p>
+                    </div>
+                    <div class="d-flex align-items-center" style="gap: 8px;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <p class="mb-0 text-black">Order Tracking</p>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recently Viewed
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/index.html#best-seller">Best Seller</a></li>
+                            <li><a class="dropdown-item" href="/index.html#suggest">Suggest Today</a></li>
+                            <li><a class="dropdown-item" href="/index.html#just-landing">Just Landing</a></li>
+                        </ul>
+                    </div>
+                    <div style="border-right: 2px solid var(--border-color);">
+                        <div class="dropdown">
+                            <button class="btn py-0 dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EGP</a></li>
+                                <li><a class="dropdown-item" href="#">ُEUR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <img src="/images/region.png" width="15" height="15" alt="region">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                ENG
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">AR</a></li>   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+    <!-- Navigation -->
+    <section>
+        <div class="d-flex container my-2 rounded-2 bg-white" style="padding: 30px;">
+            <p class="m-2" style="color: #999999;"><a href="/index.html" class="text-decoration-none" style="color: #999999;">Home</a> /</p>
+            <p class="m-2" style="color: #999999;">Shop /</p>
+            <p class="m-2 active-page" style="color: #999999;">Top Cell Phones & Tablets</p>
+        </div>
+    </section>  
+    <!-- Navigation -->
+    <section class="container my-2 bg-white p-4 rounded-2">
+
+    <h5 class="fw-bold text-uppercase mb-4">
+        Top Cell Phones & Tablets
+    </h5>
+
+    <div class="row g-4">
+
+        <!-- Left Card -->
+        <div class="col-lg-8">
+
+            <div class="card text-white border-0 rounded-4 overflow-hidden h-100">
+
+                <img src="/images/slider3.png.png" class="card-img" alt="">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-center ps-5">
+                    <h2 class="fw-bold display-5" style="font-size: 30px;font-weight: 700;">
+                        Noise Cancelling
+                    </h2>
+
+                    <h2 class="fw-light" style="font-size: 30px;font-weight: 300;">
+                        Headphone
+                    </h2>
+
+                    <p class="w-25 ms-4" style="line-height:18px ;font-size: 12px;font-weight: 400;">
+                        Boso Over-Ear Headphone
+                        Wifi, Voice Assistant,
+                        Low latency game mde
+                    </p>
+                    <a href="#" class="btn btn-light rounded-pill align-self-start px-4  mt-2">
+                        Buy Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Card -->
+        <div class="col-lg-4">
+
+            <div class="card text-white border-0 rounded-4 overflow-hidden h-100">
+
+                <img src="/images/banner1.png.png" class="card-img" alt="">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-between p-4">
+
+                    <div>
+                        <h3 class="fw-bold mt-2 ml-4" style="color: black;">
+                            redmi note 12
+                        </h3>
+                       <h3 class="fw-bold mt-2 ml-4" style="color: black;">
+                            Pro+ 5g
+                        </h3>
+                        <span style="color: #999999;">Rise to the challenge</span>
+
+                        
+                    </div>
+
+                    <a href="#" class="btn btn-dark rounded-pill px-4 align-self-start position-absolute top-2 end-0 me-4">
+                        Shop Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<div class="container my-2 p-0">
+    <div class="popular-box p-4">
+
+        <h6 class="fw-bold mb-4 text-uppercase">POPULAR CATEGORIES</h6>
+
+        <div class="row g-3">
+
+            <div class="col-lg-2-4 col-6">
+                <div class="category-item">
+                    <div>
+                        <h6>iPhone (iOS)</h6>
+                        <small>74 Items</small>
+                    </div>
+                    <img src="/images/Link → prod20.png.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-2-4 col-6">
+                <div class="category-item">
+                    <div>
+                        <h6>Android</h6>
+                        <small>35 Items</small>
+                    </div>
+                    <img src="/images/Link → prod21.png.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-2-4 col-6">
+                <div class="category-item">
+                    <div>
+                        <h6>5G Support</h6>
+                        <small>12 Items</small>
+                    </div>
+                    <img src="/images/Link → prod22.png.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-2-4 col-6">
+                <div class="category-item">
+                    <div>
+                        <h6>Apple Tablets</h6>
+                        <small>22 Items</small>
+                    </div>
+                    <img src="/images/Link → prod23.png.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-2-4 col-6">
+                <div class="category-item">
+                    <div>
+                        <h6>Chargers</h6>
+                        <small>33 Items</small>
+                    </div>
+                    <img src="/images/Link → prod24.png.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2-4 col-6">
+                <div class="category-item">
+                    <div>
+                        <h6>Chargers</h6>
+                        <small>33 Items</small>
+                    </div>
+                    <img src="/images/Link → prod25.png.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2-4 col-6">
+                <div class="category-item">
+                    <div>
+                        <h6>Chargers</h6>
+                        <small>33 Items</small>
+                    </div>
+                    <img src="/images/Link → prod62.png.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2-4 col-6">
+                <div class="category-item">
+                    <div>
+                        <h6>Chargers</h6>
+                        <small>33 Items</small>
+                    </div>
+                    <img src="/images/Link → prod27.png.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2-4 col-6">
+                <div class="category-item">
+                    <div>
+                        <h6>Chargers</h6>
+                        <small>33 Items</small>
+                    </div>
+                    <img src="/images/Link → prod63.png.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2-4 col-6">
+                <div class="category-item">
+                    <div>
+                        <h6>Chargers</h6>
+                        <small>33 Items</small>
+                    </div>
+                    <img src="/images/Link → prod64.png.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<section class="container my-2 bg-white p-4 rounded-2 ">
+    <div class="row">
+        <div class="filter-sidebar col-md-4 col-lg-3">
+
+            <!-- 1. CATEGORIES CARD -->
+            <div class="card border-0 shadow-sm mb-3 bg-secondary-subtle p-5">
+                <div class="card-body">
+                <h6 class="fw-bold mb-3 text-uppercase fs-7 text-muted">CATEGORIES</h6>
+                <button class="btn btn-sm w-100 mb-3 bg-white" style="color: #000000;">All Categories</button>
+                
+                <div class="fw-bold fs-7 mb-2 text-dark">Cell Phones & Tablets</div>
+                <ul class="list-unstyled ps-2 mb-0 text-secondary" style="font-size: 0.85rem; line-height: 1.8;">
+                    <li><a href="#" class="text-decoration-none text-secondary">All</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">iPhone</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Samsung</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Xiaomi</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Asus</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Oppo</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Gaming Smartphone</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">iPad</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Window Tablets</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">eReader</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Smartphone Chargers</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <!-- 2. MAIN FILTERS CARD -->
+            <div class="card border-0 shadow-sm mb-3 bg-secondary-subtle">
+                <div class="card-body">
+                
+                <!-- Header -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h6 class="fw-bold mb-0 text-uppercase fs-7">CATEGORIES</h6>
+                    <a href="#" class="text-decoration-none text-muted" style="font-size: 0.8rem;">Reset All</a>
+                </div>
+
+                <!-- Selected Badges -->
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge bg-light text-dark border fw-normal">Min: $45.00 <i class="bi bi-x ms-1"></i></span>
+                    <span class="badge bg-light text-dark border fw-normal">10.9 inch <i class="bi bi-x ms-1"></i></span>
+                    <span class="badge bg-light text-dark border fw-normal">Color: Red <i class="bi bi-x ms-1"></i></span>
+                    <span class="badge bg-light text-dark border fw-normal">128GB <i class="bi bi-x ms-1"></i></span>
+                </div>
+
+                <hr class="my-3 text-muted">
+
+                <!-- By Brands -->
+                <div class="mb-3">
+                    <h6 class="fw-bold fs-7 mb-2">By Brands</h6>
+                    <input type="text" class="form-control form-control-sm mb-2 p-3" >
+                    <div class="form-check" style="font-size: 0.85rem;">
+                    <input class="form-check-input" type="checkbox" id="brand1">
+                    <img src="/images/brand1.png.png" alt=""><span class="text-muted">(14)</span>
+                    </div>
+                    <div class="form-check" style="font-size: 0.85rem;">
+                    <input class="form-check-input" type="checkbox" id="brand2">
+                    <img src="/images/brand2.png.png" alt=""><span class="text-muted">(6)</span>
+                    </div>
+                    <div class="form-check" style="font-size: 0.85rem;">
+                    <input class="form-check-input" type="checkbox" id="brand3">
+                    <img src="/images/brand3.png.png" alt=""><span class="text-muted">(7)</span>
+                    </div>
+                    <div class="form-check" style="font-size: 0.85rem;">
+                    <input class="form-check-input" type="checkbox" id="brand3">
+                    <img src="/images/brand4.png.png" alt=""><span class="text-muted">(18)</span>
+                    </div>
+                    <div class="form-check" style="font-size: 0.85rem;">
+                    <input class="form-check-input" type="checkbox" id="brand3">
+                    <img src="/images/brand5.png.png" alt=""><span class="text-muted">(1)</span>
+                    </div>
+                </div>
+
+                <hr class="my-3 text-muted">
+
+                <!-- By Price -->
+                <div class="mb-3">
+                    <h6 class="fw-bold fs-7 mb-2">By Price</h6>
+                    <input type="range" class="form-range" min="0" max="10000">
+                    <div class="d-flex align-items-center gap-1 mt-2">
+                    <input type="text" class="form-control form-control-sm" value="$ 0">
+                    <span class="text-muted">—</span>
+                    <input type="text" class="form-control form-control-sm" value="$  10000">
+                    <button class="btn btn-success btn-sm px-2 py-0" style="height: 31px;">Go</button>
+                    </div>
+                </div>
+
+                <hr class="my-3 text-muted">
+
+                <!-- By Rating -->
+                <div class="mb-3">
+                    <h6 class="fw-bold fs-7 mb-2">By Rating</h6>
+                    <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" name="rating" id="r5">
+                    <span class="ms-5 text-body-tertiary">(52)</span>
+                    
+                    </div>
+                    <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" name="rating" id="r4">
+                    <span class="ms-5 text-body-tertiary">(24)</span>
+                    </div>
+                    <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" name="rating" id="r4">
+                    <span class="ms-5 text-body-tertiary">(5)</span>
+                    </div>
+                    <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" name="rating" id="r4">
+                    <span class="ms-5 text-body-tertiary">(1)</span>
+                    </div>
+                </div>
+
+                <hr class="my-3 text-muted">
+
+                <!-- By Screen Size -->
+                <div class="mb-3">
+                    <h6 class="fw-bold fs-7 mb-2">By Screen Size</h6>
+                    <div class="d-flex flex-wrap gap-1">
+                    <button class="btn btn-outline-custom py-1 px-1 bg-white">7" & Under</button>
+                    <button class="btn btn-outline-custom py-1 px-1 bg-white">7.1" - 8.9"</button>
+                    <button class="btn btn-outline-custom py-1 px-1 bg-white">9" - 10.9"</button>
+                    <button class="btn btn-outline-custom py-1 px-1 bg-white">11" & Greater</button>
+                    </div>
+                </div>
+
+                <hr class="my-3 text-muted">
+
+                <!-- By Color -->
+                <div class="mb-3">
+                    <h6 class="fw-bold fs-7 mb-2">By Color</h6>
+                    <div class="d-flex gap-2 flex-wrap">
+                    <span class="color-box p-3" style="background-color: #d9534f;"></span>
+                    <span class="color-box p-3" style="background-color: #5cb85c;"></span>
+                    <span class="color-box p-3" style="background-color: #0275d8;"></span>
+                    <span class="color-box p-3" style="background-color: #6f42c1;"></span>
+                    <span class="color-box p-3" style="background-color: #000000;"></span>
+                    <span class="color-box p-3" style="background-color: #ffffff;"></span>
+                    <span class="color-box p-3" style="background-color: #d9534f;"></span>
+                    <span class="color-box p-3" style="background-color: #5cb85c;"></span>
+                    </div>
+                </div>
+
+                <hr class="my-3 text-muted">
+
+                <!-- By Memory -->
+                <div class="mb-3">
+                    <h6 class="fw-bold fs-7 mb-2">By Memory</h6>
+                    <div class="row g-1" style="font-size: 0.85rem;">
+                    <div class="col-6">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="m1">
+                        <label class="form-check-label" for="m1">16GB <span class="text-muted">(4)</span></label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="m2">
+                        <label class="form-check-label" for="m2">1.5GB <span class="text-muted">(1)</span></label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="m3">
+                        <label class="form-check-label" for="m3">8GB <span class="text-muted">(2)</span></label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="m4">
+                        <label class="form-check-label" for="m4">1GB <span class="text-muted">(1)</span></label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="m3">
+                        <label class="form-check-label" for="m3">6GB <span class="text-muted">(12)</span></label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="m3">
+                        <label class="form-check-label" for="m3">512GB <span class="text-muted">(2)</span></label>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="m3">
+                        <label class="form-check-label" for="m3">4GB <span class="text-muted">(6)</span></label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="m3">
+                        <label class="form-check-label" for="m3">3GB <span class="text-muted">(7)</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-3 text-muted">
+
+                <!-- By Conditions -->
+                <div>
+                    <h6 class="fw-bold fs-7 mb-2">By Conditions</h6>
+                    <div class="form-check" style="font-size: 0.85rem;">
+                    <input class="form-check-input" type="checkbox" id="c1">
+                    <span>New</span><span class="text-body-tertiary">(21)</span>
+                    </div>
+                    <div class="form-check" style="font-size: 0.85rem;">
+                    <input class="form-check-input" type="checkbox" id="c2">
+                    <span>Like New</span><span class="text-body-tertiary">  (2)</span>
+                    
+                    </div>
+                    <div class="form-check" style="font-size: 0.85rem;">
+                    <input class="form-check-input" type="checkbox" id="c2">
+                    <span>Open Box</span><span class="text-body-tertiary"> (38)</span>
+                    
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            <div>
+                <img src="/images/div.addimg.png" alt="" class="w-100 rounded-4">
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-8">
+            <h3>Best seller in this category</h3>
+            <section class="best-seller container ">
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="product-card text-center position-relative">
+
+                <span class="save-badge">
+                    SAVE <br> $59.00
+                </span>
+
+                <div class="top-circle"></div>
+
+                <img src="/images/7 → Link → prod11.png.png" class="img-fluid product-img">
+
+                <p class="rate">(8)</p>
+
+                <h6 class="product-title">
+                    uLosk Mini case 2.0, Xenon
+                    ii10 / 32GB / SSD 512GB /
+                    VGA 8GB
+                </h6>
+
+                <div class="price">
+                    <span class="new-price">$1,729.00</span>
+                    <del>$2,119.00</del>
+                </div>
+
+                <span class="shipping">
+                    FREE SHIPPING
+                </span>
+
+                <div class="stock out">
+                    ● Out of stock
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="product-card text-center position-relative">
+
+                <div class="top-circle"></div>
+
+                <img src="/images/7 → Link → prod12.png.png" class="img-fluid product-img">
+
+                <p class="rate">(9)</p>
+
+                <h6 class="product-title">
+                    Oppo Watch Series 8 GPS
+                    Cellular Stainless Steel
+                </h6>
+
+                <div class="price">
+                    <span class="new-price">
+                        $979.00 - $1,259.00
+                    </span>
+                </div>
+
+                <span class="shipping gray">
+                    $2.98 SHIPPING
+                </span>
+
+                <div class="pre-order">
+                    PRE - ORDER
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="product-card text-center position-relative">
+
+                <span class="save-badge">
+                    SAVE <br> $3.00
+                </span>
+
+                <div class="top-circle"></div>
+
+                <img src="/images/7 → Link → prod13.png.png" class="img-fluid product-img">
+
+                <p class="rate">(9)</p>
+
+                <h6 class="product-title">
+                    iSmart 24V Charger
+                </h6>
+
+                <div class="price">
+                    <span class="new-price">$9.00</span>
+                    <del>$12.00</del>
+                </div>
+
+                <span class="shipping gray">
+                    $3.98 SHIPPING
+                </span>
+
+                <div class="contact">
+                    Contact
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="product-card text-center position-relative">
+
+                <span class="save-badge">
+                    SAVE <br> $199.00
+                </span>
+
+                <div class="top-circle"></div>
+
+                <img src="/images/7 → Link → prod10.png.png" class="img-fluid product-img">
+
+                <p class="rate">(152)</p>
+
+                <h6 class="product-title">
+                    OPod Pro 12.9 Inch M1
+                    2023, 64GB + Wifi, GPS
+                </h6>
+
+                <div class="price">
+                    <span class="new-price">$569.00</span>
+                    <del>$759.00</del>
+                </div>
+
+                <span class="shipping">
+                    FREE SHIPPING
+                </span>
+
+                <div class="stock">
+                    ● In stock
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+            </section>
+             <hr class="my-3 text-muted">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+
+    <!-- Left -->
+    <div>
+        <span class="fw-bold">1 - 40</span>
+        <span class="text-muted">of 120 results</span>
+    </div>
+
+    <!-- Center -->
+    <div class="d-flex align-items-center gap-2">
+
+        <span class="text-muted">Show Item</span>
+
+        <div class="btn-group btn-group-sm">
+            <button class="btn btn-success">24</button>
+            <button class="btn btn-light">48</button>
+            <button class="btn btn-light">72</button>
+        </div>
+
+    </div>
+
+    <!-- Default -->
+    <div class="d-flex align-items-center gap-2">
+
+        <span class="text-muted">Show Item</span>
+
+        <select class="form-select form-select-sm" style="width:140px;">
+            <option>Default</option>
+            <option>Price</option>
+            <option>Name</option>
+        </select>
+
+    </div>
+
+    <!-- View -->
+    <div class="d-flex align-items-center gap-2">
+
+        <span class="text-muted">View As</span>
+
+        <button class="btn btn-light btn-sm">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+        </button>
+
+        <button class="btn btn-light btn-sm">
+            <i class="bi bi-list"></i>
+        </button>
+
+    </div>
+
+            </div>
+            <div class="row g-4">
+
+    <!-- Card 1 -->
+    <div class="col-lg-3 col-md-6 mb-4 ">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+     <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card border-0 text-center position-relative h-100">
+
+            <!-- Badge -->
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                SAVE <br>$199.00
+            </span>
+
+            <!-- Circle -->
+            <span class="position-absolute top-0 end-0 m-2 rounded-circle bg-light border"
+                style="width:18px;height:18px;"></span>
+
+            <!-- Image -->
+            <img src="/images/Link → prod26.png.png"
+                class="card-img-top mx-auto mt-3"
+                style="width:95px;height:120px;object-fit:contain;">
+
+            <div class="card-body p-2">
+
+                <small class="text-secondary">(152)</small>
+
+                <h6 class="fw-bold small">
+                    SROK Smart Phone 128GB,
+                    OLED Retina
+                </h6>
+
+                <p class="mb-1">
+                    <span class="text-danger fw-bold">$579.00</span>
+                    <del class="text-secondary small">$859.00</del>
+                </p>
+
+                <span class="badge text-bg-light text-success">
+                    FREE SHIPPING
+                </span>
+
+                <p class="text-success small mt-2">
+                    ● In stock
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
     
+</div>
+            
+        </div>
+        
+        
+  </div>
+
+</section>
+    <footer class="container-fluid bg-white px-0">
+        <section class="container" style="margin-bottom: 60px;">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-4" style="padding: 50px 0; margin-bottom: 60px; border-bottom: 1px solid #DEE2E6;">
+                <div class="d-flex align-items-center gap-3" style="border-right: 1px solid #DEE2E6; padding-right: 120px;">
+                    <i class="fa-solid fa-truck-fast" style="color: var(--main-color);"></i>
+                    <p class="mb-0 text-uppercase" style="font-size: 14px; font-weight: 400; line-height: 23.8px;">Free Shipping over $99</p>
+                </div>
+                <div class="d-flex align-items-center gap-3" style="border-right: 1px solid #DEE2E6; padding-right: 120px;">
+                    <i class="fa-solid fa-arrow-rotate-right" style="color: var(--main-color);"></i>
+                    <p class="mb-0 text-uppercase" style="font-size: 14px; font-weight: 400; line-height: 23.8px;">30 Days money back</p>
+                </div>
+                <div class="d-flex align-items-center gap-3" style="border-right: 1px solid #DEE2E6; padding-right: 120px;">
+                    <i class="fa-solid fa-shield" style="color: var(--main-color);"></i>
+                    <p class="mb-0 text-uppercase" style="font-size: 14px; font-weight: 400; line-height: 23.8px;">100% Secure Payment</p>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-comments" style="color: var(--main-color);"></i>
+                    <p class="mb-0 text-uppercase" style="font-size: 14px; font-weight: 400; line-height: 23.8px;">24/7 Dedicated Support</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-between flex-wrap">
+                <div class="d-flex flex-column" style="gap: 20px;">
+                    <div class="d-flex flex-column" style="gap: 34px;">
+                        <h2 class="mb-0 text-black" style="font-size: 16px; font-weight: 700; line-height: 19.2px;">Swoo - Online Electronic Market</h2>
+                        <div class="d-flex flex-column">
+                            <p class="mb-0 text-black text-uppercase" style="font-weight: 400; font-size: 12px; line-height: 18px;">hotline 24/7</p>
+                            <span class="mb-0" style="color: var(--main-color); font-size: 20px; font-weight: 700; line-height: 24px;">(025) 3686 25 16</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column" style="gap: 40px;">
+                        <div class="d-flex flex-column">
+                            <p class="mb-0 text-black" style="font-size: 14px; font-weight: 400; line-height: 21px; width: 87%;">
+                                257 Thatcher Road St, Brooklyn, Manhattan, NY 10092
+                            </p>
+                            <a href="#" class="mb-0 text-black text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 21px;">
+                                contact@swateletro.com
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center" style="gap: 14px;">
+                            <a href="#" class="text-black rounded-circle" style="border: 1px solid #99999933; padding: 9px 10px;">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-black rounded-circle" style="border: 1px solid #99999933; padding: 9px 10px;">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-black rounded-circle" style="border: 1px solid #99999933; padding: 9px 10px;">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-black rounded-circle" style="border: 1px solid #99999933; padding: 9px 10px;">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#" class="text-black rounded-circle" style="border: 1px solid #99999933; padding: 9px 10px;">
+                                <i class="fa-brands fa-behance"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-start justify-content-between flex-wrap" style="gap: 30px 100px;">
+                    <div class="d-flex flex-column" style="gap: 30px;">
+                        <h3 class="mb-0 text-black" style="font-size: 18px; font-weight: 500; line-height: 21.6px;">
+                            Top Categories
+                        </h3>
+                        <ul class="d-flex flex-column gap-2 p-0">
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    TV/Televisions
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Computers
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Laptops
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Mobiles & Tablets
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Audios
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Cameras
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Gadget
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Sport Equipments
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Office
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Smart Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column" style="gap: 30px;">
+                        <h3 class="mb-0 text-black" style="font-size: 18px; font-weight: 500; line-height: 21.6px;">
+                            Company
+                        </h3>
+                        <ul class="d-flex flex-column gap-2 p-0">
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    About Swoo
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Career
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Sitemap
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Store Locations
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column" style="gap: 30px;">
+                        <h3 class="mb-0 text-black" style="font-size: 18px; font-weight: 500; line-height: 21.6px;">
+                            Help Center
+                        </h3>
+                        <ul class="d-flex flex-column gap-2 p-0">
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Customer Service
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Policy
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Trach Order
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    FAQs
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    My Account
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Product Support
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column" style="gap: 30px;">
+                        <h3 class="mb-0 text-black" style="font-size: 18px; font-weight: 500; line-height: 21.6px;">
+                            Partner
+                        </h3>
+                        <ul class="d-flex flex-column gap-2 p-0">
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Become Seller
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Affiliate
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Advertise
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="mb-0 text-decoration-none" style="font-size: 14px; font-weight: 400; line-height: 28px; color: #666666;">
+                                    Partnership
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid" style="background-color: var(--secondary-background-color); padding: 40px 0;">
+            <div class="container">
+                <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                    <h4 class="mb-0 text-black" style="font-size: 14px; font-weight: 400px; line-height: 23.8px;">
+                        © 2024 <span style="font-weight: 700;">Shawonetc3</span> . All Rights Reserved
+                    </h4>
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="/images/paypal.png" class="img-fluid" alt="">
+                        <img src="/images/stripe.png" class="img-fluid" alt="">
+                        <img src="/images/mastercard.png" class="img-fluid" alt="">
+                        <img src="/images/klarna.png" class="img-fluid" alt="">
+                        <img src="/images/visa.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between gap-2">
+                        <div style="border-right: 2px solid var(--border-color);">
+                            <div class="dropdown">
+                                <button class="btn py-0 dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    USD
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">EGP</a></li>
+                                    <li><a class="dropdown-item" href="#">ُEUR</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="/images/region.png" width="15" height="15" alt="region">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" style="outline: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    ENG
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">AR</a></li>   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>

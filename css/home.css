@@ -12,6 +12,8 @@
     color: #000000; 
 }
 
+/* Popluar Categories */
+
 .categories-carousel{
     overflow: hidden;
     width: 100%;
@@ -34,7 +36,7 @@
     flex: 0 0 auto;
 }
 
-.categories-carousel::before,
+.categories-carousel::before,   
 .categories-carousel::after{
     content: "";
     position: absolute;
@@ -65,12 +67,15 @@
     }
 }
 
+/* Popluar Categories */
+
+
+/* Explore Section */
 .carousel-banner,
 .side-banner{
     max-height: 450px;
     border-radius:20px;
     overflow:hidden;
-    position:relative;
     display:flex;
     align-items:center;
     background-size:cover;
@@ -107,8 +112,6 @@
 
 .carousel-content,
 .side-content{
-    position:relative;
-    z-index:2;
     max-width:340px;
     color:#fff;
     display: flex;
@@ -150,9 +153,6 @@
     padding: 3px 12px !important;
     width: 20%;
     margin: 0 auto 5px  !important;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 21px;
 }
 
 .carousel-indicators [data-bs-target]{
@@ -169,17 +169,6 @@
     background-color: #000000 !important;
     opacity:1;  
 }
-.carousel-indicators [data-bs-slide]{
-    width: 20px !important;
-    height: 20px !important;
-    padding: 5px !important;
-    background-color: transparent !important;
-}
-
-.carousel-indicators [data-bs-slide] span{
-    color: #000000 !important;
-}
-
 
 .first-banner,
 .second-banner,
@@ -188,7 +177,6 @@
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    display: flex;
     padding: 30px;
     background-size: cover;
     background-position: center;
@@ -216,6 +204,10 @@
     line-height: 18px;
 }
 
+/* Explore Section */
+
+
+/* Weekly Deals Section */
 .deals-container{
     padding: 30px;
     display: flex;
@@ -260,6 +252,9 @@
     flex: 6;
 }
 
+/* Weekly Deals Section */
+
+/* Best Seller section */
 .best-active{
     background-color: var(--main-color);
     border: none !important;
@@ -305,11 +300,9 @@
     align-items: center;
 }
 
+/* Best Seller section */
 
-#popularBrandsCarousel{
-    position: relative;
-}
-
+/* Popular Brands section */
 #popularBrandsCarousel{
     position: relative;
 }
@@ -343,15 +336,10 @@
     font-size: 18px;
 }
 
-.custom-brand-control:hover{
-    background: #fff !important;
-}
+/* Popular Brands section */
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
-    display: none;
-}
 
+/* Suggest section */
 .suggest-products{
     display: flex;
     flex-wrap: wrap;
@@ -374,6 +362,9 @@
     height: 430px;
 }
 
+/* Suggest section */
+
+/* Best Selling Speakers */
 .speaker-control{
     width: 42px;
     height: 42px;
@@ -402,11 +393,12 @@
     height: 100%;
 }
 
-.speaker-item img{
+.speaker-item .product-card img{
     width: 100%;
     height: 180px;
     object-fit: contain;
 }
+/* Best Selling Speakers */
 
 .combined-box{
     background: var(--secondary-background-color);
